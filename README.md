@@ -2,17 +2,23 @@
 
 ### Modifies classes.ku.edu professor links to redirect to their RateMyProfessors.com search query
 
-This browser extention was designed to make finding ratings for your future professors easier. It modifies each link in the results of classes.ku.edu to the search query for that professor on RateMyProfessors.com
+This browser extension was designed to make finding ratings for your future professors easier. It modifies each link in the results of classes.ku.edu to the search query for that professor on RateMyProfessors.com
+
+[Screenshot](https://i.imgur.com/sGeA1fC.png)
 
 # How to install
 Chrome:
-* TODO
+* Extention currently under review at Chrome Web Store
 
 In Firefox:
-1. Download packaged `.xpi` from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
-2. In Firefox, press `Ctrl + Shift + A` to open the Addons page
-3. Click the cog-wheel and select `Install Add-on From File...`
-4. Select the `.xpi` of the release you would like to install
+* Manually:
+  1. Download packaged `.xpi` from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
+  2. In Firefox, press `Ctrl + Shift + A` to open the Addons page
+  3. Click the cog-wheel and select `Install Add-on From File...`
+  4. Select the `.xpi` of the release you would like to install
+
+* Mozilla Addon Manager:
+  1. This addon is currently under reivew, however once it is accepted, it can be installed [here](https://addons.mozilla.org/en-US/firefox/addon/ku-search-ratemyprofessors/)
 
 # How to build
 Using `web-ext` (`npm i --global web-ext`):
