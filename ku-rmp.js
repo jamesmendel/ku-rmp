@@ -1,6 +1,7 @@
 //Search query URI for RMP University of Kansas
 const RMP_URI = "https://www.ratemyprofessors.com/search.jsp?queryoption=HEADER&queryBy=teacherName&schoolName=University+of+Kansas&schoolID=1117&query=";
-//Find all clickable professors on DOM
+
+//Finds all clickable professors on DOM and updates links
 function scrapeProfessors() {
     console.log("Searching for professors...");
     let professorList = document.querySelectorAll('[title="Click here to get instructor info"]');
@@ -23,12 +24,6 @@ function scrapeProfessors() {
     }
     console.log("Done.");
 }
-
-// function createElement() {
-//     let p = document.createElement("p");
-//     var content = document.createTextNode("Testing 123");
-//     p.append(content);
-// }
 
 //Setup observer to detect when targetNode changes.
 //This gets around reimplementing KU's classes.js functions to implement hooks.
