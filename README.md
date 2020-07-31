@@ -11,14 +11,18 @@ Chrome:
 * Extention currently under review at Chrome Web Store
 
 In Firefox:
+* Automatically:
+  1. Head over to [Releases](https://github.com/jamesmendel/ku-rmp/releases/) and click the `.xpi` for the release you would like to install.
+  2. Click `Continue to Installation`
+  3. Click `Add`
+
 * Manually:
-  1. Download packaged `.xpi` from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
+  1. Navigate to packaged `.xpi` from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
+  2. Right-click, `Save Link As`
   2. In Firefox, press `Ctrl + Shift + A` to open the Addons page
   3. Click the cog-wheel and select `Install Add-on From File...`
   4. Select the `.xpi` of the release you would like to install
 
-* Mozilla Addon Manager:
-  1. This addon is currently under reivew, however once it is accepted, it can be installed [here](https://addons.mozilla.org/en-US/firefox/addon/ku-search-ratemyprofessors/)
 
 # How to build
 Using `web-ext` (`npm i --global web-ext`):
@@ -28,7 +32,7 @@ Using `web-ext` (`npm i --global web-ext`):
 3. Run `web-ext build`
 4. A new folder called `web-ext-artifacts` should contain the compiled project in a .zip
 
-Manually
+Manually:
 
 1. Clone this repository
 2. Select `manifest.json`

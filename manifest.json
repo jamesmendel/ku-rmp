@@ -4,19 +4,21 @@
     "version": "1.0",
 
     "author": "James Mendel",
-    "email": "jrm@ku.edu",
-    "website": "https://people.ku.edu/~j116m376/",
+    "homepage_url": "https://jamesmendel.github.io",
 
     "description": "Updates professor link on classes.ku.edu to go directly to that professors RateMyProfessors page.",
     "icons": {
-        "48": "icons/icon-96.png"
+        "96": "icons/icon-96.png"
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "ku-rmp@jamesmendel"
+            "id": "ku-rmp@jamesmendel",
+            "update_url": "https://github.com/jamesmendel/ku-rmp/blob/master/update-manifest.json"
         }
     },
-    "web_accessible_resources": ["ku-rm.js"],
+    "web_accessible_resources": [
+        "ku-rmp.js"
+    ],
     "content_scripts": [{
         "matches": [
             "http://classes.ku.edu/*",
