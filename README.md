@@ -9,7 +9,10 @@ Chrome:
 * TODO
 
 In Firefox:
-* TODO
+1. Download packaged `.xpi` from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
+2. In Firefox, press `Ctrl + Shift + A` to open the Addons page
+3. Click the cog-wheel and select `Install Add-on From File...`
+4. Select the `.xpi` of the release you would like to install
 
 # How to build
 Using `web-ext` (`npm i --global web-ext`):
