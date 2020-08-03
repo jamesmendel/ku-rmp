@@ -4,11 +4,11 @@
             "updates": [
                 {
                     "version": "1.0",
-                    "update_link": "https://github.com/jamesmendel/ku-rmp/releases/download/1.0/ku_search_ratemyprofessors-1.0-an+fx.xpi"
+                    "update_link": "https://github.com/jamesmendel/ku-rmp/releases/download/v1.0/ku_search_ratemyprofessors-1.0-an+fx.xpi"
                 },
                 {
                     "version": "1.1",
-                    "update_link": "https://github.com/jamesmendel/ku-rmp/releases/download/1.1/ku_search_ratemyprofessors-1.1-an+fx.xpi"
+                    "update_link": "https://github.com/jamesmendel/ku-rmp/releases/download/v1.1/ku_search_ratemyprofessors-1.1-an+fx.xpi"
                 }
             ]
         }
