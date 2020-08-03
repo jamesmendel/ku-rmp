@@ -8,7 +8,7 @@ This browser extension was designed to make finding ratings for your future prof
 
 # How to install
 Chrome:
-* Extention now available at Chrome Web Store! Pick it up [here](https://chrome.google.com/webstore/detail/ku-search-ratemyprofessor/fcbcjgfbgnnjkokdmgdbmlibeakmalgi/)
+* Extension now available at Chrome Web Store! Pick it up [here](https://chrome.google.com/webstore/detail/ku-search-ratemyprofessor/fcbcjgfbgnnjkokdmgdbmlibeakmalgi/)
 
 In Firefox:
 * Automatically:
