@@ -8,7 +8,7 @@ This browser extension was designed to make finding ratings for your future prof
 
 # How to install
 Chrome:
-* Extention currently under review at Chrome Web Store
+* Extention now available at Chrome Web Store! Pick it up [here](https://chrome.google.com/webstore/detail/ku-search-ratemyprofessor/fcbcjgfbgnnjkokdmgdbmlibeakmalgi/)
 
 In Firefox:
 * Automatically:
@@ -27,14 +27,14 @@ In Firefox:
 # How to build
 Using `web-ext` (`npm i --global web-ext`):
 
-1. Clone this repositority
+1. Clone this repositority (`git clone https://github.com/jamesmendel/ku-rmp.git`)
 2. `cd` into the root
 3. Run `web-ext build`
 4. A new folder called `web-ext-artifacts` should contain the compiled project in a .zip
 
 Manually:
 
-1. Clone this repository
+1. Clone this repository (`git clone https://github.com/jamesmendel/ku-rmp.git`)
 2. Select `manifest.json`
 3. Select all dependant files referenced within `manifest.json` (such as `app.js`, `ku-rmp.js`, `/icons`)
 4. Create a compressed zip file
