@@ -8,7 +8,16 @@ This browser extension was designed to make finding ratings for your future prof
 
 # How to install
 Chrome:
-* Extension now available at Chrome Web Store! Pick it up [here](https://chrome.google.com/webstore/detail/ku-search-ratemyprofessor/fcbcjgfbgnnjkokdmgdbmlibeakmalgi/)
+* Automatically:
+  1. Extension now available at Chrome Web Store! Pick it up [here](https://chrome.google.com/webstore/detail/ku-search-ratemyprofessor/fcbcjgfbgnnjkokdmgdbmlibeakmalgi/)
+
+* Manually:
+  1. Download lastest release (`.zip`) from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
+  2. Extract to folder
+  3. Open Chrome and navigate to the url `chrome://extensions`
+  4. Enable Developer mode (top right corner)
+  5. Click `Load unpacked`
+  6. Navigate to the extracted extension and select the root of the folder. Click `Select Folder`
 
 In Firefox:
 * Automatically:

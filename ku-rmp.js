@@ -17,7 +17,7 @@ function scrapeProfessors() {
             professors[i] = professorList[i].innerHTML;
             professorList[i].href = RMP_URI + professors[i];
             professorList[i].title = `Search RateMyProfessor for ${professors[i]}`;
-            console.log(getProfessorID(professors[i]).data.rmp_id);
+            // console.log(getProfessorID(professors[i]).data.rmp_id);
         }
         // console.log(professorList);
         // console.log(professors);
@@ -25,36 +25,6 @@ function scrapeProfessors() {
         console.log("No professors found");
     }
     console.log("Done.");
-}
-
-//xhttp function to get direct link instead of search query link
-let cache = {};
-
-function getProfessorID(name, func, errFunc) {
-    if (name in cache) {
-        func(cache[name]);
-    } else {
-        let rmpUrl = RMP_API.replace("{PROFNAME}", name);
-        let xhttp = new XMLHttpRequest();
-        xhttp.open('GET', rmpUrl);
-        xhttp.send();
-        xhttp.onload = function(e) {
-            let jsonResponse = JSON.parse(this.responseText.substring(5, this.responseText.length - 1));
-            console.log(jsonResponse);
-
-            // No Professor was Found
-            if (jsonResponse.response.docs.length == 0) {
-                errFunc(toTitleCase(name.replace('+', ' ')));
-                return;
-            }
-
-            let data = {
-                rmp_id: jsonResponse.response.docs[0].pk_id,
-            }
-            cache[name] = data;
-            func(data);
-        }
-    }
 }
 
 //Setup observer to detect when targetNode changes.
@@ -80,3 +50,33 @@ const config = {
     subtree: true,
 };
 observer.observe(targetNode, config);
+
+//xhttp function to get direct link instead of search query link
+// let cache = {};
+
+// function getProfessorID(name, func, errFunc) {
+//     if (name in cache) {
+//         func(cache[name]);
+//     } else {
+//         let rmpUrl = RMP_API.replace("{PROFNAME}", name);
+//         let xhttp = new XMLHttpRequest();
+//         xhttp.open('GET', rmpUrl);
+//         xhttp.send();
+//         xhttp.onload = function(e) {
+//             let jsonResponse = JSON.parse(this.responseText.substring(5, this.responseText.length - 1));
+//             console.log(jsonResponse);
+
+//             // No Professor was Found
+//             if (jsonResponse.response.docs.length == 0) {
+//                 errFunc(toTitleCase(name.replace('+', ' ')));
+//                 return;
+//             }
+
+//             let data = {
+//                 rmp_id: jsonResponse.response.docs[0].pk_id,
+//             }
+//             cache[name] = data;
+//             func(data);
+//         }
+//     }
+// }
