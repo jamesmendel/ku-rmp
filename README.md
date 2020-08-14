@@ -12,7 +12,7 @@ Chrome:
   1. Extension now available at Chrome Web Store! Pick it up [here](https://chrome.google.com/webstore/detail/ku-search-ratemyprofessor/fcbcjgfbgnnjkokdmgdbmlibeakmalgi/)
 
 * Manually:
-  1. Download lastest release (`.zip`) from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
+  1. Download latest release (`.zip`) from [Releases](https://github.com/jamesmendel/ku-rmp/releases/)
   2. Extract to folder
   3. Open Chrome and navigate to the url `chrome://extensions`
   4. Enable Developer mode (top right corner)
@@ -36,7 +36,7 @@ In Firefox:
 # How to build
 Using `web-ext` (`npm i --global web-ext`):
 
-1. Clone this repositority (`git clone https://github.com/jamesmendel/ku-rmp.git`)
+1. Clone this repository (`git clone https://github.com/jamesmendel/ku-rmp.git`)
 2. `cd` into the root
 3. Run `web-ext build`
 4. A new folder called `web-ext-artifacts` should contain the compiled project in a .zip
