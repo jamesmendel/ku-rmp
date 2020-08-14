@@ -7,16 +7,17 @@ function scrapeProfessors() {
     let professorList = document.querySelectorAll('[title="Click here to get instructor info"]');
 
     if (professorList.length > 0) {
-        var xhttp = new XMLHttpRequest();
         console.log(`${professorList.length} professors found:`);
 
-        var professors = [];
+        var profs = [];
         //Create hrefs to professor's RMP page
         console.log("Updating link(s) in DOM");
         for (let i = 0; i < professorList.length; i++) {
-            professors[i] = professorList[i].innerHTML;
-            professorList[i].href = RMP_URI + professors[i];
-            professorList[i].title = `Search RateMyProfessor for ${professors[i]}`;
+            profs[i] = professorList[i].innerHTML.split(",");
+            let prof_query = profs[i][1] + "+" + profs[i][0];
+            let prof_name = profs[i][1] + " " + profs[i][0];
+            professorList[i].href = RMP_URI + prof_query;
+            professorList[i].title = `Search RateMyProfessor for ${prof_name}`;
             // console.log(getProfessorID(professors[i]).data.rmp_id);
         }
         // console.log(professorList);
@@ -50,33 +51,3 @@ const config = {
     subtree: true,
 };
 observer.observe(targetNode, config);
-
-//xhttp function to get direct link instead of search query link
-// let cache = {};
-
-// function getProfessorID(name, func, errFunc) {
-//     if (name in cache) {
-//         func(cache[name]);
-//     } else {
-//         let rmpUrl = RMP_API.replace("{PROFNAME}", name);
-//         let xhttp = new XMLHttpRequest();
-//         xhttp.open('GET', rmpUrl);
-//         xhttp.send();
-//         xhttp.onload = function(e) {
-//             let jsonResponse = JSON.parse(this.responseText.substring(5, this.responseText.length - 1));
-//             console.log(jsonResponse);
-
-//             // No Professor was Found
-//             if (jsonResponse.response.docs.length == 0) {
-//                 errFunc(toTitleCase(name.replace('+', ' ')));
-//                 return;
-//             }
-
-//             let data = {
-//                 rmp_id: jsonResponse.response.docs[0].pk_id,
-//             }
-//             cache[name] = data;
-//             func(data);
-//         }
-//     }
-// }
