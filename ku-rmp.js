@@ -13,7 +13,7 @@ function scrapeProfessors() {
         //Create hrefs to professor's RMP page
         console.log("Updating link(s) in DOM");
         for (let i = 0; i < professorList.length; i++) {
-            profs[i] = professorList[i].innerHTML.split(",");
+            profs[i] = professorList[i].innerHTML.split(", ");
             let prof_query = profs[i][1] + "+" + profs[i][0];
             let prof_name = profs[i][1] + " " + profs[i][0];
             professorList[i].href = RMP_URI + prof_query;
